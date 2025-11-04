@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BookVerse – Review Your Reads</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>📖 BookVerse</h1>
+    <p>Your personal space for sharing thoughts on books you love!</p>
+  </header>
+
+  <section class="input-section">
+    <input type="text" id="bookTitle" placeholder="Book Title" />
+    <input type="text" id="bookAuthor" placeholder="Author" />
+    <textarea id="bookReview" placeholder="Write your review..."></textarea>
+
+    <div class="rating">
+      <label>⭐ Rate it:</label>
+      <select id="bookRating">
+        <option value="1">1 ⭐</option>
+        <option value="2">2 ⭐⭐</option>
+        <option value="3">3 ⭐⭐⭐</option>
+        <option value="4">4 ⭐⭐⭐⭐</option>
+        <option value="5" selected>5 ⭐⭐⭐⭐⭐</option>
+      </select>
+    </div>
+
+    <button id="addBtn">Add Review</button>
+  </section>
+
+  <section class="reviews-section">
+    <h2>✨ Your Book Reviews ✨</h2>
+    <div id="reviewsList" class="reviews-list"></div>
+  </section>
+
+  <footer>
+    <p>Made with ❤️ by <strong>Your Name</strong></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
